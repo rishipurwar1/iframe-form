@@ -1,14 +1,14 @@
 import React from "react";
 import { styles } from "./styles";
 
-const SelectInput = ({ data, onChange, ...inputProps }) => {
+const SelectInput = ({ data, onChange, name, label }) => {
   return (
     <div style={styles.formControl}>
-      <label style={styles.label} htmlFor={inputProps.name}>
-        {inputProps.label}
+      <label style={styles.label} htmlFor={name}>
+        {label}
       </label>
-      <select style={styles.input} onChange={onChange} {...inputProps}>
-        {inputProps.name === "country" ? (
+      <select style={styles.input} onChange={onChange} name={name}>
+        {name === "country" ? (
           <>
             <option value="">Select Country</option>
             {data.map((country) => (

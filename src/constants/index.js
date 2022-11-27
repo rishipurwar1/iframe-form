@@ -20,13 +20,11 @@ export const inputs = [
   {
     name: "country",
     type: "select",
-    placeholder: "Select Country",
     label: "Country",
   },
   {
     name: "state",
     type: "select",
-    placeholder: "Select State",
     label: "State",
   },
   {

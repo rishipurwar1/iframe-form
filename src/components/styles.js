@@ -1,7 +1,7 @@
 export const styles = {
   iframe: {
     border: "1px solid red",
-    height: "80vh",
+    height: "600px",
     backgroundColor: "#ececec",
   },
   form: {

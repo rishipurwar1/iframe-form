@@ -12,7 +12,7 @@ const CustomIframe = ({ children, ...props }) => {
       {...props}
       ref={setContentRef}
       style={styles.iframe}
-      title="form iframe"
+      title="iframe form"
     >
       {mountNode && createPortal(children, mountNode)}
     </iframe>

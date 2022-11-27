@@ -8,7 +8,6 @@ const App = () => {
   useEffect(() => {
     const handler = (event) => {
       if (event.data.type !== "submit") return;
-      console.log(event.data);
       setResult(event.data);
     };
 
@@ -26,7 +25,7 @@ const App = () => {
         <p className="success">{`Result: ${JSON.stringify(result?.value)}`}</p>
       )}
       {result?.value?.error && (
-        <p className="error">{`Result: ${JSON.stringify(result?.value)}`}</p>
+        <p className="error">{`Error: ${JSON.stringify(result?.value)}`}</p>
       )}
     </div>
   );
